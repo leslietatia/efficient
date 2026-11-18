@@ -1,56 +1,36 @@
-# Welcome to your Expo app 👋
+# Efficient
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Problema
+Efficient resuelve el problema de la procrastinación estudiantil y la falta de planificación realista del tiempo.
 
-## Get started
+## Solución
+Efficient ayudará a los estudiantes a mejorar su organización diaria y vencer la procrastinación mediante un sistema estructurado de gestión de tiempo. En lugar de acumular tareas en una lista genérica, la aplicación guía al usuario para convertir cada obligación en un plan concreto: definir cuándo se entrega, elegir el día y la hora exacta en que se va a realizar y calcular cuánto tiempo tomará completarla.
 
-1. Install dependencies
+## Objetivos
+- Permitir el registro de tareas académicas validando sus campos obligatorios en menos de 30 segundos mediante pruebas unitarias automatizadas con Jest y React Native Testing Library.
+- Asegurar la persistencia local del 100 por ciento de los registros en AsyncStorage comprobando su integridad con inspección de datos JSON tras 3 reinicios forzados en Expo Go.
+- Actualizar el estado visual de las tareas completadas en menos de 200 ms medido con React DevTools Profiler y emitir recordatorios locales en menos de 5 segundos verificados con marcas de tiempo en dispositivo físico.
 
-   ```bash
-   npm install
-   ```
+## Habilidades
+- Crear componentes reutilizables
+- Colocar navegación con Expo Router
+- Crear Custom Hooks para la lógica de tareas
+- Guardar datos localmente con AsyncStorage
+- Manejar estados con useState y useEffect
+- Diseñar pantallas limpias con StyleSheet
 
-2. Start the app
+## Alcance inicial
+Formulario sencillo de registro: Un espacio limpio para anotar el nombre de la tarea, una breve descripción, la fecha límite, el día en que se va a realizar, la hora y el tiempo estimado.
+Lista visual de tareas: Tarjetas ordenadas con los datos clave de cada pendiente para revisar de un vistazo qué toca hacer en el día.
+Control de avance: Opción para marcar tareas como completadas (tachándolas) y eliminar las que ya no se necesiten, junto con un contador simple de tareas pendientes y hechas.
+Almacenamiento local: Guardado automático en el dispositivo con AsyncStorage para que los deberes no se pierdan al cerrar o recargar la aplicación.
+Diseño limpio y adaptable: Interfaz minimalista con tonos pastel suaves y navegación básica entre pantallas que funcione bien tanto en el navegador como en el celular.
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Restricciones
+- No tendrá integración con inteligencia artificial ni sugerencias automáticas.
+- No contará con sistema de registro, inicio de sesión ni perfiles de usuario en la nube.
+- No enviará notificaciones remotas desde servidores externos (solo recordatorios locales en el dispositivo).
+- No tendrá modo colaborativo ni opción para compartir tareas con otras personas.
+- No incluirá calendario mensual interactivo ni sincronización con Google Calendar.
+- No permitirá adjuntar archivos, imágenes ni notas de voz dentro de las tareas.
+- No requerirá conexión a internet para funcionar, ya que todo se guardará de forma local.
